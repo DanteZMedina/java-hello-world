@@ -10,7 +10,7 @@ public class Main {
 
     @GetMapping("/")
     public String hello() {
-        return "¡Hola Mundo desde Cloud Run!";
+        return "¡Hola Mundo desde Cloud Run! + Github CI/CD automático 😎😎☀️☀️😶‍🌫️";
     }
 
     public static void main(String[] args) {
