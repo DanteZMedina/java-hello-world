@@ -1,8 +1,8 @@
 steps:
-  # 1️⃣ Construir la imagen Docker
+  #  Construir la imagen Docker
   - name: 'gcr.io/cloud-builders/docker'
     args: [
-      'build',
+      'build', '-t',
       '-t', 'us-central1-docker.pkg.dev/$PROJECT_ID/java-backend-repo/java-hello-world:$COMMIT_SHA',
       '.'
     ]

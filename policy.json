@@ -1,0 +1,107 @@
+{
+  "bindings": [
+    {
+      "members": [
+        "serviceAccount:service-419454264924@gcp-sa-artifactregistry.iam.gserviceaccount.com"
+      ],
+      "role": "roles/artifactregistry.serviceAgent"
+    },
+    {
+      "members": [
+        "serviceAccount:419454264924-compute@developer.gserviceaccount.com"
+      ],
+      "role": "roles/artifactregistry.writer"
+    },
+    {
+      "members": [
+        "serviceAccount:419454264924@cloudbuild.gserviceaccount.com"
+      ],
+      "role": "roles/cloudbuild.builds.builder"
+    },
+    {
+      "members": [
+        "serviceAccount:service-419454264924@gcp-sa-cloudbuild.iam.gserviceaccount.com"
+      ],
+      "role": "roles/cloudbuild.serviceAgent"
+    },
+    {
+      "members": [
+        "serviceAccount:service-419454264924@containerregistry.iam.gserviceaccount.com"
+      ],
+      "role": "roles/containerregistry.ServiceAgent"
+    },
+    {
+      "members": [
+        "serviceAccount:419454264924-compute@developer.gserviceaccount.com"
+      ],
+      "role": "roles/editor"
+    },
+    {
+      "members": [
+        "serviceAccount:419454264924-compute@developer.gserviceaccount.com"
+      ],
+      "role": "roles/logging.logWriter"
+    },
+    {
+      "members": [
+        "user:Dantemx5@gmail.com"
+      ],
+      "role": "roles/owner"
+    },
+    {
+      "members": [
+        "serviceAccount:service-419454264924@gcp-sa-pubsub.iam.gserviceaccount.com"
+      ],
+      "role": "roles/pubsub.serviceAgent"
+    },
+    {
+      "members": [
+        "serviceAccount:service-419454264924@serverless-robot-prod.iam.gserviceaccount.com"
+      ],
+      "role": "roles/run.serviceAgent"
+    },
+    {
+      "condition": {
+        "expression": "request.time < timestamp(\"2025-10-30T02:07:39.006Z\")",
+        "title": "cloudbuild-connection-setup"
+      },
+      "members": [
+        "serviceAccount:service-419454264924@gcp-sa-cloudbuild.iam.gserviceaccount.com"
+      ],
+      "role": "roles/secretmanager.admin"
+    },
+    {
+      "members": [
+        "serviceAccount:419454264924-compute@developer.gserviceaccount.com"
+      ],
+      "role": "roles/storage.objectUser"
+    },
+  {
+    "role": "roles/cloudbuild.builds.builder",
+    "members": [
+      "serviceAccount:419454264924-compute@developer.gserviceaccount.com"
+    ]
+  },
+  {
+    "role": "roles/run.admin",
+    "members": [
+      "serviceAccount:419454264924-compute@developer.gserviceaccount.com"
+    ]
+  },
+  {
+    "role": "roles/artifactregistry.admin",
+    "members": [
+      "serviceAccount:419454264924-compute@developer.gserviceaccount.com"
+    ]
+  },
+  {
+    "role": "roles/storage.admin",
+    "members": [
+      "serviceAccount:419454264924-compute@developer.gserviceaccount.com"
+    ]
+  }
+
+  ],
+  "etag": "BwZCVd8sfwg=",
+  "version": 3
+}
